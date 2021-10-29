@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
+import { CryptoModule } from './crypto/crypto.module';
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -13,6 +15,7 @@ import { UsersModule } from './users/users.module';
       synchronize: true,
     }),
     UsersModule,
+    CryptoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

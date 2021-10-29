@@ -29,6 +29,7 @@
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
     "cooky-cutter": "^1.5.4",
+    "dotenv": "^10.0.0",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
@@ -72,6 +73,9 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "setupFiles": [
+      "../test/loadEnvs"
+    ]
   }
 }
